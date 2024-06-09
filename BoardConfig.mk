@@ -13,11 +13,12 @@ ALLOW_MISSING_DEPENDENCIES := true
 # A/B
 AB_OTA_UPDATER := true
 AB_OTA_PARTITIONS += \
+    recovery \
     vendor \
     system_ext \
     product \
     system
-BOARD_USES_RECOVERY_AS_BOOT := true
+
 
 # Architecture
 TARGET_ARCH := arm64
@@ -74,6 +75,7 @@ BOARD_MOTOROLA_DYNAMIC_PARTITIONS_SIZE := 9122611200 # TODO: Fix hardcoded value
 TARGET_BOARD_PLATFORM := kalama
 
 # Recovery
+BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
