@@ -21,11 +21,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     bootctrl.kalama
 
-PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.kalama \
-    libgptutils \
-    libz \
-    libcutils
+
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
