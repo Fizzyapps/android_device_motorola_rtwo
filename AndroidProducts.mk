@@ -6,9 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_rtwo.mk
+    $(LOCAL_DIR)/twrp_rtwo.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_rtwo-user \
-    omni_rtwo-userdebug \
-    omni_rtwo-eng
+    twrp_rtwo-eng \
